@@ -48,7 +48,6 @@
 		00BD06112BA9C7E2005F1486 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		00BD06122BA9C7E2005F1486 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		00BD06132BA9C7E2005F1486 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
-		0C7F6D0C3F2554085EE9A677 /* Pods_ai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +110,6 @@
 		02E5217DF880F4C2645FD2CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C7F6D0C3F2554085EE9A677 /* Pods_ai.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
