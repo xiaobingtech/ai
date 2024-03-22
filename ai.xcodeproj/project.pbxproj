@@ -28,6 +28,8 @@
 		00BD061D2BA9C7E2005F1486 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06132BA9C7E2005F1486 /* CGFloat.swift */; };
 		101649B72BAD2BE300C3047F /* Tiercel in Frameworks */ = {isa = PBXBuildFile; productRef = 101649B62BAD2BE300C3047F /* Tiercel */; };
 		101649B92BAD2C2100C3047F /* DownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101649B82BAD2C2100C3047F /* DownloadVC.swift */; };
+		101649C42BAD376900C3047F /* DownloadTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101649C22BAD376900C3047F /* DownloadTaskCell.xib */; };
+		101649C52BAD376900C3047F /* DownloadTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101649C32BAD376900C3047F /* DownloadTaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		00BD06122BA9C7E2005F1486 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		00BD06132BA9C7E2005F1486 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		101649B82BAD2C2100C3047F /* DownloadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadVC.swift; sourceTree = "<group>"; };
+		101649C22BAD376900C3047F /* DownloadTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTaskCell.xib; sourceTree = "<group>"; };
+		101649C32BAD376900C3047F /* DownloadTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadTaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +98,6 @@
 				00BD05ED2BA9C4F0005F1486 /* Assets.xcassets */,
 				00BD05EF2BA9C4F0005F1486 /* LaunchScreen.storyboard */,
 				00BD05F22BA9C4F0005F1486 /* Info.plist */,
-				101649B82BAD2C2100C3047F /* DownloadVC.swift */,
 			);
 			path = ai;
 			sourceTree = "<group>";
@@ -173,6 +176,9 @@
 		101649C12BAD2D4100C3047F /* Download */ = {
 			isa = PBXGroup;
 			children = (
+				101649B82BAD2C2100C3047F /* DownloadVC.swift */,
+				101649C32BAD376900C3047F /* DownloadTaskCell.swift */,
+				101649C22BAD376900C3047F /* DownloadTaskCell.xib */,
 			);
 			path = Download;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			files = (
 				00BD05F12BA9C4F0005F1486 /* LaunchScreen.storyboard in Resources */,
 				00BD05EE2BA9C4F0005F1486 /* Assets.xcassets in Resources */,
+				101649C42BAD376900C3047F /* DownloadTaskCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 				00BD06152BA9C7E2005F1486 /* ItemCell.swift in Sources */,
 				00BD061C2BA9C7E2005F1486 /* HomeVC.swift in Sources */,
 				00BD061D2BA9C7E2005F1486 /* CGFloat.swift in Sources */,
+				101649C52BAD376900C3047F /* DownloadTaskCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

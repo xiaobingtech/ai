@@ -6,15 +6,27 @@
 //
 
 import UIKit
+import Tiercel
 
 extension String {
     static let serverURL = "serverURL"
 }
 
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var sessionManager: SessionManager = {
+        var configuration = SessionConfiguration()
+        configuration.allowsCellularAccess = true
+        let path = Cache.defaultDiskCachePathClosure("Tiercel")
+        let cacahe = Cache("DownloadVC", downloadPath: path)
+        let manager = SessionManager("DownloadVC", configuration: configuration, cache: cacahe, operationQueue: DispatchQueue(label: "com.xiaobingkj.SessionManager.operationQueue"))
+        return manager
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,6 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     @objc func receiveNoti(){
         window?.rootViewController = TabC()
+    }
+    
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        sessionManager.completionHandler = completionHandler
     }
 
 }

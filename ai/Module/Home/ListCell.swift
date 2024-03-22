@@ -42,8 +42,8 @@ class ListCell: UITableViewCell {
         }
         set {
             _model = newValue
-//            bgImageView.sd_setImage(with: URL(string: newValue.thumbnailUrl))
-//            titleLabel.text = newValue.title
+            bgImageView.sd_setImage(with: URL(string: newValue.thumbnailUrl))
+            titleLabel.text = newValue.title
             durationLabel.text = newValue.duration
         }
     }

@@ -301,11 +301,16 @@ class ViewController: UIViewController {
                         let finalStr = decodedString.components(separatedBy: "\'")[1]
                         // 进一步提取 MP4 链接
                         // 这里假设链接位于 'src=' 后面，直到下一个单引号之前
-                        let playerC = AVPlayerViewController()
-                        let player = AVPlayer(url: URL(string: finalStr)!)
-                        player.play()
-                        playerC.player = player
-                        present(playerC, animated: true)
+                        if isPlay {
+                            let playerC = AVPlayerViewController()
+                            let player = AVPlayer(url: URL(string: finalStr)!)
+                            player.play()
+                            playerC.player = player
+                            present(playerC, animated: true)
+                        }else{
+                            //TODO Download
+                            appDelegate.sessionManager.download(finalStr)
+                        }
                     } else {
                         print("Failed to decode URL")
                     }
@@ -352,6 +357,18 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         tableView.deselectRow(at: indexPath, animated: true)
         downloadDetailHTML(model: dataArray[indexPath.row], isPlay: true)
     }
+    
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { actions -> UIMenu? in
+            let downloadAction = UIAction(title: "下载", image: UIImage(systemName: "square.and.arrow.down")) { action in
+                // 这里写点击“分享”后的逻辑
+                self.downloadDetailHTML(model: self.dataArray[indexPath.row], isPlay: false)
+            }
+            
+            // 创建并返回一个包含上述动作的菜单
+            return UIMenu(title: "", children: [downloadAction])
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
@@ -391,6 +408,18 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let model = dataArray[indexPath.row]
         downloadDetailHTML(model: model, isPlay: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { actions -> UIMenu? in
+            let downloadAction = UIAction(title: "下载", image: UIImage(systemName: "square.and.arrow.down")) { action in
+                // 这里写点击“分享”后的逻辑
+                self.downloadDetailHTML(model: self.dataArray[indexPath.item], isPlay: false)
+            }
+            
+            // 创建并返回一个包含上述动作的菜单
+            return UIMenu(title: "", children: [downloadAction])
+        }
     }
 }
 
