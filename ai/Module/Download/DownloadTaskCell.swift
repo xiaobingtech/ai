@@ -40,24 +40,24 @@ class DownloadTaskCell: UITableViewCell {
         startDateLabel.text = "开始时间：\(task.startDateString)"
         endDateLabel.text = "结束时间：\(task.endDateString)"
         
-        var image = #imageLiteral(resourceName: "suspend")
+        var image = UIImage(systemName: "play.circle", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
         switch task.status {
         case .suspended:
             statusLabel.text = "暂停"
             statusLabel.textColor = .black
         case .running:
-            image = #imageLiteral(resourceName: "resume")
+            image = UIImage(systemName: "pause.circle", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
             statusLabel.text = "下载中"
-            statusLabel.textColor = .blue
+            statusLabel.textColor = .systemBlue
         case .succeeded:
             statusLabel.text = "成功"
-            statusLabel.textColor = .green
+            statusLabel.textColor = .systemGreen
         case .failed:
             statusLabel.text = "失败"
-            statusLabel.textColor = .red
+            statusLabel.textColor = .systemRed
         case .waiting:
             statusLabel.text = "等待中"
-            statusLabel.textColor = .orange
+            statusLabel.textColor = .systemOrange
         default:
             image = controlButton.imageView?.image ?? #imageLiteral(resourceName: "suspend")
             break

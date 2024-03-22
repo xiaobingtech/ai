@@ -15,11 +15,11 @@ class DownloadVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        print(NSHomeDirectory())
+        title = "下载列表"
         sessionManager = appDelegate.sessionManager
         // 检查磁盘空间
-        let free = FileManager.default.tr.freeDiskSpaceInBytes / 1024 / 1024
-        print("手机剩余储存空间为： \(free)MB")
+        let free = FileManager.default.tr.freeDiskSpaceInBytes / 1024 / 1024 / 1024
+        print("手机剩余储存空间为： \(free)GB")
         sessionManager.logger.option = .default
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
@@ -170,5 +170,9 @@ extension DownloadVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        "删除"
     }
 }
