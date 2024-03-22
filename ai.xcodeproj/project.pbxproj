@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00BD05E52BA9C4EF005F1486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD05E42BA9C4EF005F1486 /* AppDelegate.swift */; };
-		00BD05E72BA9C4EF005F1486 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD05E62BA9C4EF005F1486 /* SceneDelegate.swift */; };
 		00BD05E92BA9C4EF005F1486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD05E82BA9C4EF005F1486 /* ViewController.swift */; };
-		00BD05EC2BA9C4EF005F1486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BD05EA2BA9C4EF005F1486 /* Main.storyboard */; };
 		00BD05EE2BA9C4F0005F1486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BD05ED2BA9C4F0005F1486 /* Assets.xcassets */; };
 		00BD05F12BA9C4F0005F1486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BD05EF2BA9C4F0005F1486 /* LaunchScreen.storyboard */; };
 		00BD05FA2BA9C63F005F1486 /* JXSegmentedView in Frameworks */ = {isa = PBXBuildFile; productRef = 00BD05F92BA9C63F005F1486 /* JXSegmentedView */; };
@@ -20,34 +18,35 @@
 		00BD06062BA9C6FB005F1486 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 00BD06052BA9C6FB005F1486 /* Toast */; };
 		00BD06092BA9C735005F1486 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 00BD06082BA9C735005F1486 /* SwiftSoup */; };
 		00BD06152BA9C7E2005F1486 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD060B2BA9C7E2005F1486 /* ItemCell.swift */; };
-		00BD06162BA9C7E2005F1486 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD060C2BA9C7E2005F1486 /* SearchViewController.swift */; };
+		00BD06162BA9C7E2005F1486 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD060C2BA9C7E2005F1486 /* SearchVC.swift */; };
 		00BD06172BA9C7E2005F1486 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD060D2BA9C7E2005F1486 /* ListModel.swift */; };
 		00BD06182BA9C7E2005F1486 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD060E2BA9C7E2005F1486 /* ListCell.swift */; };
-		00BD06192BA9C7E2005F1486 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD060F2BA9C7E2005F1486 /* ServerViewController.swift */; };
-		00BD061A2BA9C7E2005F1486 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06102BA9C7E2005F1486 /* WebViewController.swift */; };
-		00BD061B2BA9C7E2005F1486 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06112BA9C7E2005F1486 /* TabBarController.swift */; };
-		00BD061C2BA9C7E2005F1486 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06122BA9C7E2005F1486 /* HomeViewController.swift */; };
+		00BD06192BA9C7E2005F1486 /* ServerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD060F2BA9C7E2005F1486 /* ServerVC.swift */; };
+		00BD061A2BA9C7E2005F1486 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06102BA9C7E2005F1486 /* WebVC.swift */; };
+		00BD061B2BA9C7E2005F1486 /* TabC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06112BA9C7E2005F1486 /* TabC.swift */; };
+		00BD061C2BA9C7E2005F1486 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06122BA9C7E2005F1486 /* HomeVC.swift */; };
 		00BD061D2BA9C7E2005F1486 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06132BA9C7E2005F1486 /* CGFloat.swift */; };
+		101649B72BAD2BE300C3047F /* Tiercel in Frameworks */ = {isa = PBXBuildFile; productRef = 101649B62BAD2BE300C3047F /* Tiercel */; };
+		101649B92BAD2C2100C3047F /* DownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101649B82BAD2C2100C3047F /* DownloadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00BD05E12BA9C4EF005F1486 /* ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BD05E42BA9C4EF005F1486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00BD05E62BA9C4EF005F1486 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		00BD05E82BA9C4EF005F1486 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		00BD05EB2BA9C4EF005F1486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00BD05ED2BA9C4F0005F1486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00BD05F02BA9C4F0005F1486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00BD05F22BA9C4F0005F1486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BD060B2BA9C7E2005F1486 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		00BD060C2BA9C7E2005F1486 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		00BD060C2BA9C7E2005F1486 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		00BD060D2BA9C7E2005F1486 /* ListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		00BD060E2BA9C7E2005F1486 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
-		00BD060F2BA9C7E2005F1486 /* ServerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerViewController.swift; sourceTree = "<group>"; };
-		00BD06102BA9C7E2005F1486 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		00BD06112BA9C7E2005F1486 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		00BD06122BA9C7E2005F1486 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		00BD060F2BA9C7E2005F1486 /* ServerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerVC.swift; sourceTree = "<group>"; };
+		00BD06102BA9C7E2005F1486 /* WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		00BD06112BA9C7E2005F1486 /* TabC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabC.swift; sourceTree = "<group>"; };
+		00BD06122BA9C7E2005F1486 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		00BD06132BA9C7E2005F1486 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		101649B82BAD2C2100C3047F /* DownloadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00BD06002BA9C6D4005F1486 /* SDWebImage in Frameworks */,
+				101649B72BAD2BE300C3047F /* Tiercel in Frameworks */,
 				00BD06032BA9C6E7005F1486 /* SnapKit in Frameworks */,
 				00BD05FA2BA9C63F005F1486 /* JXSegmentedView in Frameworks */,
 				00BD06062BA9C6FB005F1486 /* Toast in Frameworks */,
@@ -87,22 +87,14 @@
 		00BD05E32BA9C4EF005F1486 /* ai */ = {
 			isa = PBXGroup;
 			children = (
-				00BD06132BA9C7E2005F1486 /* CGFloat.swift */,
-				00BD06122BA9C7E2005F1486 /* HomeViewController.swift */,
-				00BD060B2BA9C7E2005F1486 /* ItemCell.swift */,
-				00BD060E2BA9C7E2005F1486 /* ListCell.swift */,
-				00BD060D2BA9C7E2005F1486 /* ListModel.swift */,
-				00BD060C2BA9C7E2005F1486 /* SearchViewController.swift */,
-				00BD060F2BA9C7E2005F1486 /* ServerViewController.swift */,
-				00BD06112BA9C7E2005F1486 /* TabBarController.swift */,
-				00BD06102BA9C7E2005F1486 /* WebViewController.swift */,
+				101649BB2BAD2C4400C3047F /* Module */,
+				101649BA2BAD2C3800C3047F /* Extension */,
 				00BD05E42BA9C4EF005F1486 /* AppDelegate.swift */,
-				00BD05E62BA9C4EF005F1486 /* SceneDelegate.swift */,
 				00BD05E82BA9C4EF005F1486 /* ViewController.swift */,
-				00BD05EA2BA9C4EF005F1486 /* Main.storyboard */,
 				00BD05ED2BA9C4F0005F1486 /* Assets.xcassets */,
 				00BD05EF2BA9C4F0005F1486 /* LaunchScreen.storyboard */,
 				00BD05F22BA9C4F0005F1486 /* Info.plist */,
+				101649B82BAD2C2100C3047F /* DownloadVC.swift */,
 			);
 			path = ai;
 			sourceTree = "<group>";
@@ -112,6 +104,77 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		101649BA2BAD2C3800C3047F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				00BD06132BA9C7E2005F1486 /* CGFloat.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		101649BB2BAD2C4400C3047F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				101649C02BAD2D1900C3047F /* Tab */,
+				101649BC2BAD2C4D00C3047F /* Home */,
+				101649BD2BAD2C7900C3047F /* Search */,
+				101649BE2BAD2CAF00C3047F /* Server */,
+				101649BF2BAD2CC500C3047F /* Web */,
+				101649C12BAD2D4100C3047F /* Download */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		101649BC2BAD2C4D00C3047F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				00BD060B2BA9C7E2005F1486 /* ItemCell.swift */,
+				00BD060E2BA9C7E2005F1486 /* ListCell.swift */,
+				00BD060D2BA9C7E2005F1486 /* ListModel.swift */,
+				00BD06122BA9C7E2005F1486 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		101649BD2BAD2C7900C3047F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				00BD060C2BA9C7E2005F1486 /* SearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		101649BE2BAD2CAF00C3047F /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				00BD060F2BA9C7E2005F1486 /* ServerVC.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		101649BF2BAD2CC500C3047F /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				00BD06102BA9C7E2005F1486 /* WebVC.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		101649C02BAD2D1900C3047F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				00BD06112BA9C7E2005F1486 /* TabC.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		101649C12BAD2D4100C3047F /* Download */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Download;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +200,7 @@
 				00BD06022BA9C6E7005F1486 /* SnapKit */,
 				00BD06052BA9C6FB005F1486 /* Toast */,
 				00BD06082BA9C735005F1486 /* SwiftSoup */,
+				101649B62BAD2BE300C3047F /* Tiercel */,
 			);
 			productName = ai;
 			productReference = 00BD05E12BA9C4EF005F1486 /* ai.app */;
@@ -173,6 +237,7 @@
 				00BD06012BA9C6E7005F1486 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				00BD06042BA9C6FB005F1486 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				00BD06072BA9C735005F1486 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				101649B52BAD2BE300C3047F /* XCRemoteSwiftPackageReference "Tiercel" */,
 			);
 			productRefGroup = 00BD05E22BA9C4EF005F1486 /* Products */;
 			projectDirPath = "";
@@ -190,7 +255,6 @@
 			files = (
 				00BD05F12BA9C4F0005F1486 /* LaunchScreen.storyboard in Resources */,
 				00BD05EE2BA9C4F0005F1486 /* Assets.xcassets in Resources */,
-				00BD05EC2BA9C4EF005F1486 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,17 +265,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00BD06192BA9C7E2005F1486 /* ServerViewController.swift in Sources */,
-				00BD06162BA9C7E2005F1486 /* SearchViewController.swift in Sources */,
-				00BD061B2BA9C7E2005F1486 /* TabBarController.swift in Sources */,
+				00BD06192BA9C7E2005F1486 /* ServerVC.swift in Sources */,
+				00BD06162BA9C7E2005F1486 /* SearchVC.swift in Sources */,
+				101649B92BAD2C2100C3047F /* DownloadVC.swift in Sources */,
+				00BD061B2BA9C7E2005F1486 /* TabC.swift in Sources */,
 				00BD05E92BA9C4EF005F1486 /* ViewController.swift in Sources */,
-				00BD061A2BA9C7E2005F1486 /* WebViewController.swift in Sources */,
+				00BD061A2BA9C7E2005F1486 /* WebVC.swift in Sources */,
 				00BD05E52BA9C4EF005F1486 /* AppDelegate.swift in Sources */,
 				00BD06172BA9C7E2005F1486 /* ListModel.swift in Sources */,
 				00BD06182BA9C7E2005F1486 /* ListCell.swift in Sources */,
-				00BD05E72BA9C4EF005F1486 /* SceneDelegate.swift in Sources */,
 				00BD06152BA9C7E2005F1486 /* ItemCell.swift in Sources */,
-				00BD061C2BA9C7E2005F1486 /* HomeViewController.swift in Sources */,
+				00BD061C2BA9C7E2005F1486 /* HomeVC.swift in Sources */,
 				00BD061D2BA9C7E2005F1486 /* CGFloat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,14 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00BD05EA2BA9C4EF005F1486 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00BD05EB2BA9C4EF005F1486 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00BD05EF2BA9C4F0005F1486 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +426,6 @@
 				INFOPLIST_FILE = ai/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,7 +455,6 @@
 				INFOPLIST_FILE = ai/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,6 +543,14 @@
 				minimumVersion = 2.7.2;
 			};
 		};
+		101649B52BAD2BE300C3047F /* XCRemoteSwiftPackageReference "Tiercel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Danie1s/Tiercel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -521,6 +583,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 00BD06072BA9C735005F1486 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
+		};
+		101649B62BAD2BE300C3047F /* Tiercel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 101649B52BAD2BE300C3047F /* XCRemoteSwiftPackageReference "Tiercel" */;
+			productName = Tiercel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

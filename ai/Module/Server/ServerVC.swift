@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ServerViewController: UIViewController {
+class ServerVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +34,14 @@ class ServerViewController: UIViewController {
 
 }
 
-extension ServerViewController: UITextFieldDelegate{
+extension ServerVC: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.text?.count ?? 0 > 0 {
             let serverURL = UserDefaults.standard.string(forKey: .serverURL)
             UserDefaults.standard.setValue(textField.text, forKey: .serverURL)
             UserDefaults.standard.synchronize()
             if serverURL?.count ?? 0 > 0 {
-                perform(Selector.init(stringLiteral: "terminate"))
+                exit(0)
             }else{
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: .serverURL), object: nil)
             }

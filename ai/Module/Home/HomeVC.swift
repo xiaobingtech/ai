@@ -8,7 +8,7 @@
 import UIKit
 import JXSegmentedView
 
-class HomeViewController: UIViewController {
+class HomeVC: UIViewController {
 
     var segmentedDataSource: JXSegmentedBaseDataSource?
     let segmentedView = JXSegmentedView()
@@ -59,7 +59,7 @@ class HomeViewController: UIViewController {
 
 }
 
-extension HomeViewController: JXSegmentedViewDelegate {
+extension HomeVC: JXSegmentedViewDelegate {
     func segmentedView(_ segmentedView: JXSegmentedView, didSelectedItemAt index: Int) {
         if let dotDataSource = segmentedDataSource as? JXSegmentedDotDataSource {
             //先更新数据源的数据
@@ -72,7 +72,7 @@ extension HomeViewController: JXSegmentedViewDelegate {
     }
 }
 
-extension HomeViewController: JXSegmentedListContainerViewDataSource {
+extension HomeVC: JXSegmentedListContainerViewDataSource {
     func numberOfLists(in listContainerView: JXSegmentedListContainerView) -> Int {
         if let titleDataSource = segmentedView.dataSource as? JXSegmentedBaseDataSource {
             return titleDataSource.dataSource.count

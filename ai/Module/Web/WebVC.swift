@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController {
+class WebVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,6 @@ class WebViewController: UIViewController {
 
 }
 
-extension WebViewController: WKNavigationDelegate{
+extension WebVC: WKNavigationDelegate{
     
 }

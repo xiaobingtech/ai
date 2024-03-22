@@ -13,7 +13,7 @@ import JXSegmentedView
 import MJRefresh
 import Toast
 
-class SearchViewController: UIViewController {
+class SearchVC: UIViewController {
 
     var dataArray = [ListModel]()
     // current document
@@ -268,7 +268,7 @@ class SearchViewController: UIViewController {
     
 }
 
-extension SearchViewController: UISearchBarDelegate{
+extension SearchVC: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if searchBar.text?.count == 0 {
             return
@@ -279,7 +279,7 @@ extension SearchViewController: UISearchBarDelegate{
     }
 }
 
-extension SearchViewController: UITableViewDelegate,UITableViewDataSource{
+extension SearchVC: UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
@@ -319,7 +319,7 @@ extension SearchViewController: UITableViewDelegate,UITableViewDataSource{
     }
 }
 
-extension SearchViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+extension SearchVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
     }
@@ -370,7 +370,7 @@ extension SearchViewController: UICollectionViewDelegate,UICollectionViewDataSou
     }
 }
 
-extension SearchViewController: JXSegmentedListContainerViewListDelegate {
+extension SearchVC: JXSegmentedListContainerViewListDelegate {
     func listView() -> UIView {
         return view
     }

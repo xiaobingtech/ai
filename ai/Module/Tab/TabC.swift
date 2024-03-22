@@ -8,13 +8,13 @@
 import UIKit
 import JXSegmentedView
 
-class TabBarController: UITabBarController {
+class TabC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let vc = HomeViewController()
+        let vc = HomeVC()
         //配置数据源
         let dataSource = JXSegmentedTitleDataSource()
         dataSource.isTitleColorGradientEnabled = true
@@ -33,19 +33,23 @@ class TabBarController: UITabBarController {
         let nav = UINavigationController(rootViewController: vc)
         nav.tabBarItem = UITabBarItem(title: "首页", image: UIImage(systemName: "clock"), tag: 0)
         
-        let searchVC = SearchViewController()
+        let searchVC = SearchVC()
         let searchNav = UINavigationController(rootViewController: searchVC)
         searchNav.tabBarItem = UITabBarItem(title: "搜索", image: UIImage(systemName: "magnifyingglass"), tag: 1)
         
-        let setVC = ServerViewController()
+        let setVC = ServerVC()
         let setNav = UINavigationController(rootViewController: setVC)
         setNav.tabBarItem = UITabBarItem(title: "设置", image: UIImage(systemName: "gearshape.circle"), tag: 2)
         
-        let webVC = WebViewController()
+        let webVC = WebVC()
         let webNav = UINavigationController(rootViewController: webVC)
         webNav.tabBarItem = UITabBarItem(title: "网络", image: UIImage(systemName: "network"), tag: 3)
         
-        viewControllers = [nav,setNav]
+        let downloadVC = DownloadVC()
+        let downloadNav = UINavigationController(rootViewController: downloadVC)
+        downloadNav.tabBarItem = UITabBarItem(title: "下载", image: UIImage(systemName: "square.and.arrow.down"), tag: 4)
+        
+        viewControllers = [nav,downloadNav,setNav]
         tabBar.backgroundColor = .systemBackground
         
     }
