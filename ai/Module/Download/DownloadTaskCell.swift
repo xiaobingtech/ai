@@ -23,6 +23,7 @@ class DownloadTaskCell: UITableViewCell {
     @IBOutlet weak var endDateLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     
+    @IBOutlet weak var thumbView: UIImageView!
     var tapClosure: ((DownloadTaskCell) -> Void)?
     
     var task: DownloadTask?
@@ -36,9 +37,9 @@ class DownloadTaskCell: UITableViewCell {
         progressView.observedProgress = task.progress
         bytesLabel.text = "\(task.progress.completedUnitCount.tr.convertBytesToString())/\(task.progress.totalUnitCount.tr.convertBytesToString())"
         speedLabel.text = task.speedString
-        timeRemainingLabel.text = "剩余时间：\(task.timeRemainingString)"
-        startDateLabel.text = "开始时间：\(task.startDateString)"
-        endDateLabel.text = "结束时间：\(task.endDateString)"
+//        timeRemainingLabel.text = "剩余时间：\(task.timeRemainingString)"
+//        startDateLabel.text = "开始时间：\(task.startDateString)"
+//        endDateLabel.text = "结束时间：\(task.endDateString)"
         
         var image = UIImage(systemName: "play", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
         switch task.status {

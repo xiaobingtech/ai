@@ -75,8 +75,27 @@ class DownloadVC: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: "\(DownloadTaskCell.self)", bundle: nil),
                            forCellReuseIdentifier: DownloadTaskCell.reuseIdentifier)
+        tableView.rowHeight = 135
         return tableView
     }()
+    
+    func getFirstFrameOfVideo(filePath: String) -> UIImage? {
+        let url = URL(fileURLWithPath: filePath)
+        let asset = AVURLAsset(url: url)
+        let generator = AVAssetImageGenerator(asset: asset)
+        generator.appliesPreferredTrackTransform = true  // 保证图片的正确方向
+
+        var time = asset.duration
+        time.value = min(time.value, 1)  // 获取第一帧
+
+        do {
+            let imageRef = try generator.copyCGImage(at: time, actualTime: nil)
+            return UIImage(cgImage: imageRef)
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
 }
 
 extension DownloadVC: UITableViewDelegate, UITableViewDataSource {
@@ -101,6 +120,8 @@ extension DownloadVC: UITableViewDelegate, UITableViewDataSource {
         cell.task = task
         
         cell.titleLabel.text = task.fileName
+        
+        cell.thumbView.image = getFirstFrameOfVideo(filePath: task.filePath)
         
         cell.updateProgress(task)
         
