@@ -40,13 +40,13 @@ class DownloadTaskCell: UITableViewCell {
         startDateLabel.text = "开始时间：\(task.startDateString)"
         endDateLabel.text = "结束时间：\(task.endDateString)"
         
-        var image = UIImage(systemName: "play.circle", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
+        var image = UIImage(systemName: "play", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
         switch task.status {
         case .suspended:
             statusLabel.text = "暂停"
             statusLabel.textColor = .black
         case .running:
-            image = UIImage(systemName: "pause.circle", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
+            image = UIImage(systemName: "pause", withConfiguration: UIImage.SymbolConfiguration(scale: .large))
             statusLabel.text = "下载中"
             statusLabel.textColor = .systemBlue
         case .succeeded:
