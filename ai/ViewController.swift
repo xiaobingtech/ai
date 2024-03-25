@@ -309,7 +309,7 @@ class ViewController: UIViewController {
                             present(playerC, animated: true)
                         }else{
                             //TODO Download
-                            appDelegate.sessionManager.download(finalStr)
+                            appDelegate.sessionManager.download(finalStr, fileName: model.title + ".mp4")
                         }
                     } else {
                         print("Failed to decode URL")
