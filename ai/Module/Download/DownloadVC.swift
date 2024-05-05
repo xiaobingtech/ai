@@ -177,11 +177,15 @@ extension DownloadVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            guard let task = sessionManager.tasks.safeObject(at: indexPath.row) else { return }
-            sessionManager.remove(task, completely: false) { [weak self] _ in
-                self?.tableView.deleteRows(at: [indexPath], with: .automatic)
-//                self?.updateUI()
-            }
+            let alert = UIAlertController(title: "确定要删除吗？", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+            alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { action in
+                guard let task = self.sessionManager.tasks.safeObject(at: indexPath.row) else { return }
+                self.sessionManager.remove(task, completely: false) { [weak self] _ in
+                    self?.tableView.deleteRows(at: [indexPath], with: .automatic)
+                }
+            }))
+            present(alert, animated: true)
         }
     }
     

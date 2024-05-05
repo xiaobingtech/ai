@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A255512BB19311003D14C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A255502BB19311003D14C1 /* AppDelegate.swift */; };
+		00A255532BB19311003D14C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A255522BB19311003D14C1 /* ViewController.swift */; };
+		00A255552BB19312003D14C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A255542BB19312003D14C1 /* Assets.xcassets */; };
+		00A255582BB19312003D14C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A255562BB19312003D14C1 /* Main.storyboard */; };
 		00BD05E52BA9C4EF005F1486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD05E42BA9C4EF005F1486 /* AppDelegate.swift */; };
 		00BD05E92BA9C4EF005F1486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD05E82BA9C4EF005F1486 /* ViewController.swift */; };
 		00BD05EE2BA9C4F0005F1486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00BD05ED2BA9C4F0005F1486 /* Assets.xcassets */; };
@@ -26,6 +30,7 @@
 		00BD061B2BA9C7E2005F1486 /* TabC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06112BA9C7E2005F1486 /* TabC.swift */; };
 		00BD061C2BA9C7E2005F1486 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06122BA9C7E2005F1486 /* HomeVC.swift */; };
 		00BD061D2BA9C7E2005F1486 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BD06132BA9C7E2005F1486 /* CGFloat.swift */; };
+		00EE298C2BE710BF008B0D95 /* AIDownloadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE298B2BE710BF008B0D95 /* AIDownloadProgressView.swift */; };
 		101649B72BAD2BE300C3047F /* Tiercel in Frameworks */ = {isa = PBXBuildFile; productRef = 101649B62BAD2BE300C3047F /* Tiercel */; };
 		101649B92BAD2C2100C3047F /* DownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101649B82BAD2C2100C3047F /* DownloadVC.swift */; };
 		101649C42BAD376900C3047F /* DownloadTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101649C22BAD376900C3047F /* DownloadTaskCell.xib */; };
@@ -33,6 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A2554E2BB19311003D14C1 /* aimac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aimac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A255502BB19311003D14C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00A255522BB19311003D14C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00A255542BB19312003D14C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00A255572BB19312003D14C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00A255592BB19312003D14C1 /* aimac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = aimac.entitlements; sourceTree = "<group>"; };
 		00BD05E12BA9C4EF005F1486 /* ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BD05E42BA9C4EF005F1486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00BD05E82BA9C4EF005F1486 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,12 +59,20 @@
 		00BD06112BA9C7E2005F1486 /* TabC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabC.swift; sourceTree = "<group>"; };
 		00BD06122BA9C7E2005F1486 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		00BD06132BA9C7E2005F1486 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		00EE298B2BE710BF008B0D95 /* AIDownloadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDownloadProgressView.swift; sourceTree = "<group>"; };
 		101649B82BAD2C2100C3047F /* DownloadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadVC.swift; sourceTree = "<group>"; };
 		101649C22BAD376900C3047F /* DownloadTaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTaskCell.xib; sourceTree = "<group>"; };
 		101649C32BAD376900C3047F /* DownloadTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadTaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00A2554B2BB19311003D14C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00BD05DE2BA9C4EF005F1486 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,10 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A2554F2BB19311003D14C1 /* aimac */ = {
+			isa = PBXGroup;
+			children = (
+				00A255502BB19311003D14C1 /* AppDelegate.swift */,
+				00A255522BB19311003D14C1 /* ViewController.swift */,
+				00A255542BB19312003D14C1 /* Assets.xcassets */,
+				00A255562BB19312003D14C1 /* Main.storyboard */,
+				00A255592BB19312003D14C1 /* aimac.entitlements */,
+			);
+			path = aimac;
+			sourceTree = "<group>";
+		};
 		00BD05D82BA9C4EF005F1486 = {
 			isa = PBXGroup;
 			children = (
 				00BD05E32BA9C4EF005F1486 /* ai */,
+				00A2554F2BB19311003D14C1 /* aimac */,
 				00BD05E22BA9C4EF005F1486 /* Products */,
 				02E5217DF880F4C2645FD2CE /* Frameworks */,
 			);
@@ -84,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				00BD05E12BA9C4EF005F1486 /* ai.app */,
+				00A2554E2BB19311003D14C1 /* aimac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +212,7 @@
 				101649B82BAD2C2100C3047F /* DownloadVC.swift */,
 				101649C32BAD376900C3047F /* DownloadTaskCell.swift */,
 				101649C22BAD376900C3047F /* DownloadTaskCell.xib */,
+				00EE298B2BE710BF008B0D95 /* AIDownloadProgressView.swift */,
 			);
 			path = Download;
 			sourceTree = "<group>";
@@ -186,6 +220,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00A2554D2BB19311003D14C1 /* aimac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A2555C2BB19312003D14C1 /* Build configuration list for PBXNativeTarget "aimac" */;
+			buildPhases = (
+				00A2554A2BB19311003D14C1 /* Sources */,
+				00A2554B2BB19311003D14C1 /* Frameworks */,
+				00A2554C2BB19311003D14C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aimac;
+			productName = aimac;
+			productReference = 00A2554E2BB19311003D14C1 /* aimac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		00BD05E02BA9C4EF005F1486 /* ai */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00BD05F52BA9C4F0005F1486 /* Build configuration list for PBXNativeTarget "ai" */;
@@ -222,6 +273,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					00A2554D2BB19311003D14C1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					00BD05E02BA9C4EF005F1486 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -250,11 +304,21 @@
 			projectRoot = "";
 			targets = (
 				00BD05E02BA9C4EF005F1486 /* ai */,
+				00A2554D2BB19311003D14C1 /* aimac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00A2554C2BB19311003D14C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A255552BB19312003D14C1 /* Assets.xcassets in Resources */,
+				00A255582BB19312003D14C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00BD05DF2BA9C4EF005F1486 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,11 +332,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00A2554A2BB19311003D14C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A255532BB19311003D14C1 /* ViewController.swift in Sources */,
+				00A255512BB19311003D14C1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00BD05DD2BA9C4EF005F1486 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				00BD06192BA9C7E2005F1486 /* ServerVC.swift in Sources */,
+				00EE298C2BE710BF008B0D95 /* AIDownloadProgressView.swift in Sources */,
 				00BD06162BA9C7E2005F1486 /* SearchVC.swift in Sources */,
 				101649B92BAD2C2100C3047F /* DownloadVC.swift in Sources */,
 				00BD061B2BA9C7E2005F1486 /* TabC.swift in Sources */,
@@ -291,6 +365,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		00A255562BB19312003D14C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A255572BB19312003D14C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		00BD05EF2BA9C4F0005F1486 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -302,6 +384,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		00A2555A2BB19312003D14C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aimac/aimac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaobingkj.aimac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00A2555B2BB19312003D14C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aimac/aimac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F9N98X7P4L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaobingkj.aimac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		00BD05F32BA9C4F0005F1486 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,7 +567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 20240505;
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -457,7 +597,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 20240505;
 				DEVELOPMENT_TEAM = F9N98X7P4L;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -484,6 +624,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00A2555C2BB19312003D14C1 /* Build configuration list for PBXNativeTarget "aimac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A2555A2BB19312003D14C1 /* Debug */,
+				00A2555B2BB19312003D14C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00BD05DC2BA9C4EF005F1486 /* Build configuration list for PBXProject "ai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
