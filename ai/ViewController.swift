@@ -165,8 +165,6 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
-
     }
 
     //Parse CSS selector
